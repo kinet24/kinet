@@ -1,0 +1,157 @@
+:root {
+  --warna-utama: linear-gradient(to right, #43cea2, #185a9d); /* hijau-biru */
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4fef4;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(-45deg, #43cea2, #185a9d, #2ecc71, #27ae60);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.section, .card, .form, .testimoni-item {
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea, form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 10px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #27ae60;
+}
+
+
+.wa-button {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.testimoni-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.testimoni-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4fef4;
+  color: #333;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.wa-button {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer a {
+  color: #185a9d;
+  font-weight: bold;
+  text-decoration: none;
+}
